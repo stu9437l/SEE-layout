@@ -1,0 +1,31 @@
+//utils
+@import "./utils/google__fonts";
+@import "./utils/bootsrap_icons";
+
+//base
+@import "./base/variable";
+@import "./base/base";
+@import "./base/typography";
+
+//components
+@import "./component/button";
+@import "./component/input";
+@import "./component/card";
+@import "./component/accordion";
+@import "./component/slick__slider";
+
+//layouts
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/countup";
+
+@import "./layout/newsletter";
+@import "./layout/courses__list";
+@import "./layout/enqueryForm__section";
+@import "./layout/faqsList";
+@import "./layout/testimonial";
+@import "./layout/success_stories";
+@import "./layout/footer";
+
+//media-query
+@import "./breakpoint/responsive";

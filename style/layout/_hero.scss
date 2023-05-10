@@ -1,0 +1,36 @@
+section {
+  &.hero__section {
+    text-align: center;
+    .featured__image {
+      margin-bottom: 15px;
+      img {
+        height: 156px;
+        width: auto;
+      }
+    }
+    .title {
+      text-transform: uppercase;
+    }
+    .md__title {
+      font-size: $md-title-font-size;
+      color: $black;
+      .count {
+        color: $orange;
+        text-decoration: underline;
+      }
+    }
+    .banner__image {
+      margin-top: -50px;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+section {
+  &.banner__section {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

@@ -1,0 +1,35 @@
+section {
+  &.enqueryForm__section {
+    position: relative;
+    background-color: $white-light;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url("../../image/enquery-form/graphics.svg");
+      background-repeat: no-repeat;
+      height: 70%;
+      width: 70%;
+    }
+    .form__wrapper {
+      border-radius: $box-rounded;
+      box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+      background-color: white;
+      overflow: hidden;
+      .top__heading {
+        padding: 30px;
+        background-color: $blue;
+        h2 {
+          text-align: center;
+          font-size: $md-title-font-size;
+          color: white;
+          margin-bottom: 0;
+        }
+      }
+      form {
+        padding: 30px;
+      }
+    }
+  }
+}

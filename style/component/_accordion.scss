@@ -1,0 +1,49 @@
+.accordion {
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  .accordion-item {
+    border-bottom: 1px solid $black-70;
+    padding: 20px 0;
+    &:first-child {
+      border-top: 1px solid $black-70;
+    }
+    &:last-child {
+      border-bottom: 1px solid $black-70;
+    }
+    .accordion-button {
+      font-size: $sm-title-font-size;
+      color: $black;
+      font-family: $description-font-family;
+      background-color: $white;
+      box-shadow: none;
+      border: none;
+      .index {
+        font-weight: 600;
+        color: $orange;
+        margin-right: 15px;
+      }
+      &::after {
+        background: none;
+        content: "\2b";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 20px;
+        height: auto;
+        width: auto;
+      }
+      &:not(.collapsed)::after {
+        content: "\f068";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 20px;
+      }
+    }
+    .accordion-body {
+      font-size: $description-font-size;
+      color: $black;
+      font-family: $description-font-family;
+      text-align: start;
+    }
+  }
+}

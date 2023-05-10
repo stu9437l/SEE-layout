@@ -1,0 +1,100 @@
+header {
+  .top__header {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .brand__logo {
+      display: inline-block;
+      img {
+        height: 85px;
+        width: auto;
+      }
+    }
+    .main__search__box {
+      width: 45%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      i {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 30px;
+        color: $black-70;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      input {
+        border-radius: 4px;
+        &.form-control {
+          padding-left: 70px;
+          height: 56px;
+          width: 100%;
+          background-color: $white-light;
+          font-size: $md-description-font-size;
+          color: $black;
+          border: 1px solid $white-light;
+          box-shadow: none;
+        }
+      }
+      .select__box {
+        position: relative;
+        &::after {
+          position: absolute;
+          content: "";
+          top: 20%;
+          left: 0;
+          height: 60%;
+          width: 1px;
+          background-color: $black-70;
+        }
+        select {
+          font-family: $description-font-family;
+          height: 56px;
+          padding: 0 30px;
+          background-color: $white-light;
+          font-size: $md-description-font-size;
+          color: $black;
+          border: 1px solid $white-light;
+        }
+      }
+      ::placeholder {
+        color: $black-70;
+      }
+    }
+  }
+  .bottom__header {
+    display: flex;
+    border-top: 1px solid $black-10;
+    border-bottom: 1px solid $black-10;
+    align-items: center;
+    justify-content: center;
+    .navigationLink__list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      li {
+        a {
+          text-decoration: none;
+          font-size: $description-font-size;
+          font-family: 700;
+          font-weight: 600;
+          color: $black;
+          display: inline-block;
+          padding: 20px;
+          &:hover {
+            color: $blue;
+          }
+          &:active {
+            color: $blue;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+// font-family: 'Josefin Sans', sans-serif;
+// font-family: 'Yeseva One', cursive;
+
+// custom fonts
+
+.title {
+  font-size: $title-font-size;
+  color: $black;
+  margin-bottom: 15px;
+  line-height: 48px;
+}
+.description {
+  font-size: $description-font-size;
+  font-weight: 400;
+  color: $black-70;
+  margin-bottom: 15px;
+  line-height: 30px;
+}
+.sm__title {
+  font-size: $description-font-size;
+  font-weight: 600;
+  color: $orange;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  line-height: 30px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $title-font-family;
+}
+
+h5,
+h6,
+p,
+a,
+label {
+  font-family: $description-font-family;
+}
+
+.form-control {
+  font-family: $description-font-family;
+}
+button {
+  font-family: $description-font-family;
+}

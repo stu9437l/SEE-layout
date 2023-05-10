@@ -1,0 +1,42 @@
+section {
+  &.countup__section {
+    padding-bottom: 0;
+    .top__heading {
+      margin-bottom: 50px;
+      text-align: center;
+    }
+    .countup__list {
+      .countup__item {
+        text-align: center;
+        position: relative;
+        transform-style: preserve-3d;
+        &::after {
+          content: "";
+          position: absolute;
+          height: 85px;
+          width: 85px;
+          background-image: url("../../image/count-up/count__up__bg.png");
+          background-repeat: no-repeat;
+          top: 30%;
+          left: 50%;
+          transform: translate(-50%, -50%) translateZ(-1px);
+        }
+        .count {
+          font-size: 60px;
+          color: $orange;
+          margin-bottom: 10px;
+        }
+        .count__title {
+          font-size: $sm-title-font-size;
+          font-weight: 400;
+          color: $black;
+          line-height: 30px;
+        }
+      }
+    }
+    .bottom__graphics {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

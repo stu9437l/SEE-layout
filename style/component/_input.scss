@@ -1,0 +1,27 @@
+.input__field {
+  margin-bottom: 30px;
+  label {
+    font-size: $description-font-size;
+    color: $black;
+    margin-bottom: 10px;
+    .required {
+      color: $orange;
+    }
+  }
+  .primary__input {
+    min-height: 56px;
+    width: 100%;
+    background-color: $white-light;
+    font-size: $description-font-size;
+    color: $black;
+    border: 1px solid $white-light;
+    box-shadow: none !important;
+    &:focus {
+      border-color: $blue;
+    }
+  }
+}
+input,
+select {
+  outline: none !important;
+}

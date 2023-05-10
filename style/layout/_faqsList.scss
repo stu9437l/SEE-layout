@@ -1,0 +1,41 @@
+section {
+  &.faqsList__section {
+    .top__heading {
+      margin-bottom: 50px;
+      text-align: center;
+    }
+  }
+}
+
+section {
+  &.banner__section {
+    position: relative;
+    .banner__content__image {
+      position: absolute;
+      height: 500px;
+      right: 0;
+      bottom: -11px;
+    }
+    .banner__content {
+      padding: 50px 0;
+      max-width: 60%;
+      .banner__title {
+        font-size: $title-font-size;
+        color: white;
+        margin-bottom: 30px;
+      }
+      .total__courses {
+        color: $white;
+        font-size: $sm-title-font-size;
+        font-weight: 600;
+        margin-bottom: 30px;
+      }
+      .course__name {
+        color: $blue-light;
+        font-size: $description-font-size;
+        font-weight: 500;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
